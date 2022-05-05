@@ -1,0 +1,155 @@
+.videocontainer {
+  position: relative;
+  overflow: hidden;
+}
+.video-content {
+    width: 100%;
+    height: 100%;
+    /* 视频等比填充 */
+    object-fit: cover;
+}
+.video-controls {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  height: 50px;
+  background:rgba(0, 0, 0,.6);
+  transition: all .5s;
+}
+.video-progress {
+  position: relative;
+  height: 5px;
+  background-color:#222223;
+}
+.video-progress-now {
+  position: absolute;
+  left:0;
+  width: 0;
+  height: 100%;
+  background: #ff6a03;
+  z-index: 1;
+}
+.video-progress-suc {
+  position:absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #666;
+}
+.video-progress-bar {
+  width:14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top:0;
+  margin-left:-7px;
+  margin-top:-4px;
+  z-index: 2;
+  background-color: #fff;
+  cursor: pointer;
+}
+.video-play i {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  color:#fff;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.video-time {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 30px;
+  color:#fff
+}
+.video-playbackRate {
+  color:#fff;
+  float: left;
+  margin-right:20px;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+}
+.video-playbackRate-btn {
+  cursor: pointer;
+}
+/* 写样式不生效，该用事件 */
+/* .video-playbackRate-btn:hover .video-playbackRate-list{
+  display: block;
+} */
+.video-playbackRate-list {
+  display: none;
+  position: absolute;
+  bottom: 38px;
+  /* padding:10px 0; */
+  border-radius: 4px;
+  overflow: hidden;
+  background: #222226;
+}
+.selected {
+  color:#ff6a03 !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+.video-playbackRate-list li {
+  padding:0 10px;
+  width: 80px;
+}
+.video-playbackRate-list li:hover {
+  background-color: #f5f5f5;
+  color:#000;
+}
+.video-full {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 20px;
+}
+.video-full  i {
+  font-size: 20px;
+  color:#fff;
+  cursor: pointer;
+}
+.video-volume {
+  float: left;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+  align-items: center;
+  margin-right: 30px;
+}
+.video-volume i {
+  font-size: 20px;
+  margin-right: 20px;
+  color:#fff;
+}
+.video-volprogress{
+  width: 100px;
+  height: 5px;
+  background-color: #666666;
+  position: relative;
+}
+.video-volprogress-now{
+  /* position: absolute; */
+  width: 50%;
+  height: 5px;
+  background:#ff6a03;
+}
+.video-volprogress-bar{
+  height: 14px;
+  width:14px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left:50%;
+  top:0;
+  margin-left:-7px;
+  margin-top:-4px;
+}
+video::-webkit-media-controls {
+  display: none !important;
+}

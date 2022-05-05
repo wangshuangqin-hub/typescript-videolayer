@@ -1,0 +1,35 @@
+/* 如果页面存在其他相同类名，会互相影响 */
+.popup {
+  position: fixed;
+  z-index: 99;
+  border:1px solid #c0c0c0;
+}
+.popup-title {
+  height: 60px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-title h3 {
+  font-size: 18px;
+  margin-left:20px
+}
+.popup-title i {
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.popup-content{
+  height: calc(100% - 60px);
+  background-color: #fff;
+}
+.mask {
+  position: absolute;
+  left: 0;
+  right:0;
+  bottom:0;
+  top:0;
+  z-index: 98;
+  background-color: rgba(0, 0, 0, .5);
+}

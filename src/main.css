@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3349321 */
+  src: url('./iconfont/iconfont.woff2?t=1650792251305') format('woff2'),
+       url('./iconfont/iconfont.woff?t=1650792251305') format('woff'),
+       url('./iconfont/iconfont.ttf?t=1650792251305') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jingyin:before {
+  content: "\e65e";
+}
+
+.icon-play:before {
+  content: "\e8c2";
+}
+
+.icon-quxiaoquanping_o:before {
+  content: "\eb98";
+}
+
+.icon-quanping_o:before {
+  content: "\eb99";
+}
+
+.icon-shengyin_shiti:before {
+  content: "\eca5";
+}
+
+.icon-zanting:before {
+  content: "\e605";
+}
+
+.icon-close:before {
+  content: "\e69e";
+}
+* {
+  margin:0;
+  padding:0
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+body {
+  background: #f5f5f5;
+}
+.clearfix::after {
+  content:'';
+  display:block;
+  clear:both
+}
+#list {
+  width:1226px;
+  margin:20px auto;
+}
+#list .list-wrap {
+  width:1240px;
+}
+#list .list-wrap li {
+  float: left;
+  width:296px;
+  height: auto;
+  margin-right:14px;
+  background-color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+#list .list-wrap li:hover {
+  transform: translateY(-3px);
+  transition: all .4s;
+  box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+#list .list-wrap li:hover i {
+  background-color: #ff6700;
+}
+#list .list-wrap div {
+  position: relative;
+}
+#list .list-wrap img {
+  width:100%;
+  height: 100%;
+}
+#list .list-wrap i{
+  position: absolute;
+  left: 19px;
+  bottom:10px;
+  border:2px solid #fff;
+  color :#fff;
+  border-radius: 15px;
+  width:32px;
+  height:20px;
+  text-align: center;
+  line-height: 20px;
+}
+#list .list-wrap h3{
+  font-size: 12px;
+  text-align:center;
+  padding:30px 0;
+}
